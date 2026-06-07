@@ -1,358 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="mediaqueries.css"/>
 
+    <title>Rohit Yadav | AI Engineer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
-<nav id="desktop-nav">
-    <div class="logo">Rohit Yadav</div>
-    <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-<nav id="hamburger-nav">
-    <div class="logo">Rohit Yadav</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./WhatsApp Image 2024-07-25 at 8.22.18 PM.jpeg"alt="ROHIT YADAV profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">ROHIT YADAV</h1>
-      <p class="section__text__p2">PURSUING MCA</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./ROHIT RESUME (1).pdf')">
-        Download CV
-      </button>
-      <button class="btn btn-color-1" onclick="location.href='./#contact'">
-        Contact Info
-      </button>
-    </div>
-    <div id="socials-container">
-      <img
-        src="./linkedin.png"
-        alt="My LinkedIn profile"
-        class="icon"
-        onclick="location.href='https://www.linkedin.com/in/rohit-yadav-42223a303/'"
-      />
-      <img
-        src="./github.png"
-        alt="My Github profile"
-        class="icon"
-        onclick="location.href='https://github.com/'"
-      />
 
+    <!-- ================= NAVBAR ================= -->
 
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./WhatsApp Image 2024-07-26 at 12.42.23 AM.jpeg"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      
+    <header class="header">
+        <nav class="navbar">
 
-          <div class="details-container">
-            <img
-              src="./education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <p>Bachelor of Science in Information Technology</p>
-          </div>
+            <div class="logo">
+                Rohit Yadav
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Tech Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-left">
+
+                <div class="hero-badge">
+                    AI Engineer
+                </div>
+
+                <h1>
+                    Rohit Kumar Yadav
+                </h1>
+
+                <h2 id="typing-text">
+                    Generative AI Engineer
+                </h2>
+
+                <p>
+                    AI Engineer specializing in Generative AI, Agentic AI,
+                    Advanced RAG, Multi-Agent Systems, LLM Applications,
+                    and MLOps. Skilled in building production-ready AI
+                    solutions using LangGraph, LangChain, MCP, FastAPI,
+                    Vector Databases, and modern ML/DL frameworks.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="./ROHIT_RESUME.pdf" class="primary-btn">
+                        Download Resume
+                    </a>
+
+                    <a href="#projects" class="secondary-btn">
+                        View Projects
+                    </a>
+
+                </div>
+
+                <div class="social-icons">
+
+                    <a href="https://github.com/Rohit2332000" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rohit-yadav-42223a303/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:rohitrana2332000@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <div class="profile-card">
+
+                    <img src="rohit.jpeg" alt="Rohit Yadav">
+                    <span class="status-dot"></span>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="text-container">
-          <p>
-            Aspiring Data Scientist with expertise in machine learning, data analysis, 
-and statistical modeling. Proficient in Python, SQL, and data 
-visualization, with hands-on project experience. Skilled in developing 
-predictive models, processing large datasets, and leveraging data-driven 
-insights to solve real-world challenges. Passionate about staying updated 
-with emerging technologies in AI and data science.
-          </p>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <span>ABOUT ME</span>
+            <h2>Building AI That Works In Production</h2>
         </div>
-      </div>
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+                <p>
+                    I build production-ready AI systems focused on
+                    Generative AI, Agentic AI, Retrieval-Augmented Generation,
+                    Multi-Agent Workflows, and scalable backend services.
+                </p>
+
+                <p>
+                    My work combines machine learning, software engineering,
+                    and AI orchestration frameworks to create intelligent
+                    applications capable of solving real-world business
+                    problems.
+                </p>
+
+                <p>
+                    From advanced RAG pipelines to autonomous AI agents,
+                    I enjoy transforming cutting-edge AI research into
+                    practical solutions that deliver measurable impact.
+                </p>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Projects Built</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Datasets Analyzed</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>GenAI</h3>
+                    <p>Production Applications</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>MLOps</h3>
+                    <p>Deployment & Monitoring</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section">
+
+        <div class="section-title">
+            <span>EXPERIENCE</span>
+            <h2>Where I've Applied Data & AI</h2>
+        </div>
+
+        <div class="experience-card">
+
+            <div class="experience-header">
+
+                <div>
+                    <h3>Data Analytics Intern</h3>
+                    <h4>Infyntrek Systèmes</h4>
+                </div>
+
+                <span>Sep 2025 – Dec 2025</span>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    Performed data cleaning, trend analysis,
+                    and feature engineering for analytics tasks.
+                </li>
+
+                <li>
+                    Built machine learning models for classification
+                    and forecasting using Python and SQL.
+                </li>
+
+                <li>
+                    Developed dashboards and business insights using
+                    data visualization techniques.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+   <section id="projects" class="section">
+
+    <div class="section-title">
+        <span>PROJECTS</span>
+        <h2>Things I've Built</h2>
     </div>
-    <img
-      src="./arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#experience'"
-    />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">PROGRAMMING LANGUAGES</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>PYTHON</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JAVA</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>SQL</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>C</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-                
-              </div>
-            </article>
-          </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+
+            <h3>Agentic Blogger</h3>
+
+            <p>
+                Multi-agent AI blog generation platform powered
+                by LangGraph and Gemini.
+            </p>
+
+            <ul>
+                <li>80%+ workflow automation.</li>
+                <li>Persistent memory using SQLite.</li>
+                <li>Integrated web search and citations.</li>
+                <li>Reduced content creation time by 75%.</li>
+            </ul>
+
+            <div class="tags">
+                <span>LangGraph</span>
+                <span>Gemini</span>
+                <span>Streamlit</span>
+                <span>SQLite</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Rohit2332000/Agentic-Blogger" target="_blank">GitHub</a>
+                <a href="https://drive.google.com/file/d/1yYNIv3q0d5fa8O6Z5Mn0apWdOQTZuwiq/view" target="_blank">Demo</a>
+            </div>
+
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">TOOLS AND LIBRARIES</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MACHINE LEARNING,DEEP LEARNING AND Gen-AI:</h3>
-                <p>Scikit-learn,TensorFlow</p>
-                <p>Keras</p>
 
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Data Analysis & Visualization:
+        <!-- Project 2 -->
+        <div class="project-card">
 
+            <h3>Multimodal AI System</h3>
+
+            <p>
+                Advanced RAG platform for querying PDFs,
+                YouTube videos, and documents.
+            </p>
+
+            <ul>
+                <li>Indexed 1000+ chunks.</li>
+                <li>Corrective RAG implementation.</li>
+                <li>30% response accuracy improvement.</li>
+                <li>LangGraph intelligent routing.</li>
+            </ul>
+
+            <div class="tags">
+                <span>RAG</span>
+                <span>LangChain</span>
+                <span>ChromaDB</span>
+                <span>Embeddings</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Rohit2332000/Multimodal-AI-system" target="_blank">GitHub</a>
+                <a href="https://drive.google.com/file/d/1WZj-uIk_u3-uFLQ5wbg4MNwN8DFbpUUV/view" target="_blank">Demo</a>
+                <a href="https://multimodal-ai-system-zhvtnhk3bqwbsv82f5n4xv.streamlit.app/" target="_blank">Live</a>
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+
+            <h3>Your Morning AI Buddy</h3>
+
+            <p>
+                Real-time AI assistant for weather,
+                planning, news summarization, and recommendations.
+            </p>
+
+            <ul>
+                <li>Supports 50+ cities.</li>
+                <li>LLM-powered summarization.</li>
+                <li>Reduced information overload by 70%.</li>
+                <li>Personalized recommendations.</li>
+            </ul>
+
+            <div class="tags">
+                <span>Gemini</span>
+                <span>LLM</span>
+                <span>Streamlit</span>
+                <span>AI Assistant</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/Rohit2332000/UR_MORNING_BUDDY" target="_blank">GitHub</a>
+                <a href="https://drive.google.com/file/d/1RofqEe9rgbp1nTtsOgYqJE5PN03PZVLw/view" target="_blank">Demo</a>
+                <a href="https://urmorningbuddy-g8trhsmlshjsbyiaa9xkav.streamlit.app/" target="_blank">Live</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
+        <div class="section-title">
+            <span>EDUCATION</span>
+            <h2>Academic Background</h2>
+        </div>
+
+        <div class="education-grid">
+
+            <div class="education-card">
+
+                <div class="edu-year">
+                    2023 - 2025
+                </div>
+
+                <h3>
+                    Master of Computer Applications
                 </h3>
-                <p>Pandas,Numpy,Plotly,</p>
-                <p>Matplotlib,Seaborn</p>
-                
-                
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Visualization & BI:</h3>
-                <p>Power BI,Tableau,MS Excel</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Cloud & Deployment:</h3>
-                <p>AWS,Streamlit</p>
-              </div>
-           
-                
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-      
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11 (1).jpg"
-              alt="Project 1"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">MOVIE RECOMMENDED SYSTEM</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Rohit2332000/MOVIE-RECOMMENDED-SYSTEM'"
-            >
-              Github
-           
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./Olympic_rings_interesting-facts-about-the-Olympics-scaled-1-1536x1020.jpg"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">OLYMPICS DATA ANALYTICS WEB APP</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Rohit2332000/Olympics-data-analytics-web-app'"
-            >
-              Github
-            </button>
-            
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./project-3.jpg"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">BRAIN TUMOR DETECTION USING ML </h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/Rohit2332000/Brain-Tumor-Detection'"
-            >
-              Github
-            </button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      src="./arrow.png  "
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">rohitrana2332000@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/rohit-yadav-42223a303/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-      
-  </footer>
 
+                <h4>
+                    Graphic Era University
+                </h4>
 
-<script src="script.js"></script>    
+                <p>
+                    Dehradun, India
+                </p>
+
+                <div class="cgpa">
+                    CGPA: 7.4
+                </div>
+
+            </div>
+
+            <div class="education-card">
+
+                <div class="edu-year">
+                    2020 - 2023
+                </div>
+
+                <h3>
+                    Bachelor of Science in Information Technology
+                </h3>
+
+                <h4>
+                    Graphic Era University
+                </h4>
+
+                <p>
+                    Dehradun, India
+                </p>
+
+                <div class="cgpa">
+                    CGPA: 7.6
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TECH STACK ================= -->
+
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <span>TECH STACK</span>
+            <h2>Technology Stack</h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-category">
+
+                <h3>🤖 GenAI & Agentic AI</h3>
+
+                <div class="skill-tags">
+                    <span>LangGraph</span>
+                    <span>LangChain</span>
+                    <span>LangSmith</span>
+                    <span>Advanced RAG</span>
+                    <span>MCP</span>
+                    <span>Tool Calling</span>
+                    <span>LLM Agents</span>
+                    <span>Claude Code</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>💻 Programming & Backend</h3>
+
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>PostgreSQL</span>
+                    <span>SQLAlchemy</span>
+                    <span>FastAPI</span>
+                    <span>Redis</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>🧠 Machine Learning & Deep Learning</h3>
+
+                <div class="skill-tags">
+                    <span>Scikit-Learn</span>
+                    <span>TensorFlow</span>
+                    <span>PyTorch</span>
+                    <span>LSTM</span>
+                    <span>Transformers</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>📊 Data Science</h3>
+
+                <div class="skill-tags">
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>Grafana</span>
+                    <span>Excel</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>☁️ MLOps & Infrastructure</h3>
+
+                <div class="skill-tags">
+                    <span>Docker</span>
+                    <span>MLflow</span>
+                    <span>AWS</span>
+                    <span>CI/CD</span>
+                    <span>GitHub Actions</span>
+                </div>
+
+            </div>
+
+            <div class="skill-category">
+
+                <h3>🛠 Tools & Platforms</h3>
+
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>PyCharm</span>
+                    <span>Jupyter Notebook</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section id="certifications" class="section">
+
+        <div class="section-title">
+            <span>CERTIFICATIONS</span>
+            <h2>Professional Certifications</h2>
+        </div>
+
+        <div class="cert-grid">
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+
+                <h3>
+                    Introduction to Data Analyst
+                </h3>
+
+                <p>
+                    IBM
+                </p>
+
+            </div>
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+
+                <h3>
+                    FastAPI for Machine Learning
+                </h3>
+
+                <p>
+                    Campus X
+                </p>
+
+            </div>
+
+            <div class="cert-card">
+
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+
+                <h3>
+                    Data Analytics Internship
+                </h3>
+
+                <p>
+                    Infyntrek Systèmes
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <div class="section-title">
+            <span>CONTACT</span>
+            <h2>Let's Build AI Together</h2>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        rohitrana2332000@gmail.com
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <h3>LinkedIn</h3>
+
+                    <p>
+                        Connect Professionally
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fab fa-github"></i>
+
+                    <h3>GitHub</h3>
+
+                    <p>
+                        Explore My Projects
+                    </p>
+
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    required
+                >
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>
+                Rohit Kumar Yadav
+            </h2>
+
+            <p>
+                AI Engineer • Generative AI • Agentic AI • LLM Applications • MLOps
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/Rohit2332000"
+                    target="_blank"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/rohit-yadav-42223a303/"
+                    target="_blank"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a
+                    href="mailto:rohitrana2332000@gmail.com"
+                >
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Rohit Kumar Yadav. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= SCRIPT ================= -->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
