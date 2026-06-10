@@ -571,13 +571,20 @@ body::after{
 ================================================== */
 
 .projects-grid{
-
     display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(330px,1fr));
-
+    grid-template-columns:repeat(3,1fr);
     gap:30px;
+    justify-items:center;
+}
+
+.project-card{
+    width:100%;
+    max-width:380px;
+}
+
+/* Center the 4th project on second row */
+.project-card:nth-child(4){
+    grid-column:2;
 }
 
 .project-card{
