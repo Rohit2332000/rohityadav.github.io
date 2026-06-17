@@ -570,43 +570,43 @@ body::after{
    PROJECTS SECTION
 ================================================== */
 
+#projects{
+    padding-top:120px;
+}
+
 .projects-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
-    justify-items:center;
+    align-items:stretch;
 }
 
 .project-card{
-    width:100%;
-    max-width:380px;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
+
 
 /* Center the 4th project on second row */
-.project-card:nth-child(4){
-    grid-column:2;
-}
 
 .project-card{
-
     position:relative;
 
-    background:
-    rgba(255,255,255,0.05);
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
 
-    backdrop-filter:
-    blur(15px);
-
-    border:
-    1px solid rgba(255,255,255,0.08);
-
+    border:1px solid rgba(255,255,255,0.08);
     border-radius:28px;
 
     padding:35px;
-
     overflow:hidden;
 
     transition:.4s ease;
+
+    display:flex;
+    flex-direction:column;
+    min-height:750px; /* keeps all cards same height */
 }
 
 .project-card::before{
@@ -656,12 +656,10 @@ body::after{
 }
 
 .project-card ul{
-
     padding-left:18px;
-
     margin-bottom:25px;
+    flex-grow:1;
 }
-
 .project-card li{
 
     color:#cbd5e1;
@@ -674,12 +672,11 @@ body::after{
 ================================================== */
 
 .tags{
-
     display:flex;
-
     flex-wrap:wrap;
-
     gap:10px;
+    min-height:140px;
+    align-content:flex-start;
 }
 
 .tags span{
@@ -1336,4 +1333,16 @@ body::after{
     background: #00adb5;
     border-color: #00adb5;
     color: #000;
+}
+
+@media screen and (max-width: 1200px){
+    .projects-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
 }
