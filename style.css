@@ -565,6 +565,9 @@ body::after{
 
     color:#cbd5e1;
 }
+.experience-card:not(:last-child){
+    margin-bottom:40px;
+}
 
 /* ==================================================
    PROJECTS SECTION
