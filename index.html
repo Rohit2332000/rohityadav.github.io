@@ -575,6 +575,316 @@
         <!-- PROJECT 4 — MULTIMODAL AI -->
         <!-- ========================================= -->
 
+        <!-- ========================================= -->
+        <!-- PROJECT 4 — RAGGUARD -->
+        <!-- ========================================= -->
+
+        <div class="project-card">
+
+            <div class="featured-ribbon">
+                <i class="fas fa-star"></i> FEATURED
+            </div>
+            <img
+                src="rag_image.png"
+                class="project-image"
+            >
+
+            <div class="project-content">
+
+                
+
+                <h3>🛡️ RAGGuard — LLM Evaluation, Reliability & Observability Framework</h3>
+
+                <p>
+                    A component-wise and lifecycle-oriented evaluation framework
+                    for RAG and LLM applications. RAGGuard evaluates retrieval
+                    quality, generation quality, end-to-end RAG performance,
+                    application quality, security & safety, operational
+                    reliability, regression behavior, and production performance.
+                </p>
+
+                <!-- Evaluation Lifecycle -->
+
+                <div class="rag-lifecycle">
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">01</span>
+                        <span>Retriever</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">02</span>
+                        <span>Generator</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">03</span>
+                        <span>RAG Pipeline</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">04</span>
+                        <span>Application</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">05</span>
+                        <span>Safety</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">06</span>
+                        <span>Operations</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">07</span>
+                        <span>Regression</span>
+                    </div>
+
+                    <div class="lifecycle-arrow">→</div>
+
+                    <div class="lifecycle-step">
+                        <span class="step-number">08</span>
+                        <span>Online Eval</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Evaluation Areas -->
+
+                <div class="evaluation-grid">
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-database"></i>
+                        <div>
+                            <h4>Retriever Evaluation</h4>
+                            <p>Precision, Recall & retrieval failure analysis</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-robot"></i>
+                        <div>
+                            <h4>Generator Evaluation</h4>
+                            <p>Faithfulness & Answer Relevancy</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <div>
+                            <h4>End-to-End RAG</h4>
+                            <p>Contextual Relevancy, Faithfulness & Relevancy</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-check-double"></i>
+                        <div>
+                            <h4>Application Quality</h4>
+                            <p>Correctness, Completeness & Response Style</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Security & Safety</h4>
+                            <p>Toxicity, Leakage & Scope Adherence</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <div>
+                            <h4>Operational Evaluation</h4>
+                            <p>Latency, Cost & Reliability</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <h4>Regression Testing</h4>
+                            <p>Detect quality degradation across system changes</p>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Online Evaluation</h4>
+                            <p>Production traces, monitoring & continuous evaluation</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Architecture -->
+
+                <div class="ragguard-architecture">
+
+                    <h4 class="architecture-title">
+                        <i class="fas fa-stream"></i>
+                        Evaluation Lifecycle
+                    </h4>
+
+                    <div class="architecture-flow">
+
+                        <div class="architecture-node">
+                            <strong>Build</strong>
+                            <span>RAG / LLM Application</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Evaluate</strong>
+                            <span>DeepEval / GEval</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Diagnose</strong>
+                            <span>Failure Analysis</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Improve</strong>
+                            <span>Prompt / Retrieval / Model</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Regression</strong>
+                            <span>Release Validation</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Deploy</strong>
+                            <span>Production</span>
+                        </div>
+
+                        <span class="flow-arrow">→</span>
+
+                        <div class="architecture-node">
+                            <strong>Monitor</strong>
+                            <span>LangSmith</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Key Highlights -->
+
+                <div class="project-highlights">
+
+                    <h4>
+                        <i class="fas fa-star"></i>
+                        Key Highlights
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Component-wise evaluation isolates retrieval and
+                            generation failures instead of evaluating the RAG
+                            system as a black box.
+                        </li>
+
+                        <li>
+                            Uses LLM-as-a-Judge evaluation through DeepEval
+                            GEval for application-level quality and safety assessment.
+                        </li>
+
+                        <li>
+                            Covers quality and safety dimensions including
+                            correctness, completeness, toxicity, leakage and
+                            scope adherence.
+                        </li>
+
+                        <li>
+                            Extends evaluation into operational metrics such as
+                            latency, cost and reliability.
+                        </li>
+
+                        <li>
+                            Designed for regression testing so RAG improvements
+                            can be validated without introducing quality degradation.
+                        </li>
+
+                        <li>
+                            Production layer uses LangSmith traces for continuous
+                            online evaluation and monitoring.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Tech Stack -->
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>DeepEval</span>
+                    <span>GEval</span>
+                    <span>RAG Evaluation</span>
+                    <span>LLM Evaluation</span>
+                    <span>LangSmith</span>
+                    <span>LLM-as-a-Judge</span>
+                    <span>RAG</span>
+                    <span>Regression Testing</span>
+                    <span>Observability</span>
+
+                </div>
+
+
+                <!-- Project Links -->
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/Rohit2332000/RAG_EVALUATION"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github-btn"
+                    >
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <div class="project-card">
 
             <img
